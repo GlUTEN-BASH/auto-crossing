@@ -1,5 +1,7 @@
 # Auto-Crossing
 
+![TECO](https://img.shields.io/badge/Arduino-Leonardo-blue) ![TECO](https://img.shields.io/badge/Version-1.2-brightgreen)
+
 ![LOGO](https://user-images.githubusercontent.com/57950551/135249706-0ea0aa13-8e93-4f58-9cc2-94f0c5586463.png)
 
 Auto Crossing is a sketch for leonardo based arduino boards.

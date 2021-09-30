@@ -149,7 +149,7 @@ void loop() {
            if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
            if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
-          y_repeat(23);
+          y_repeat(22);
            if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
            if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
@@ -161,7 +161,7 @@ void loop() {
            if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
            if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
-          y_repeat(4);
+          y_repeat(5);
            if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
            if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
@@ -169,7 +169,7 @@ void loop() {
            if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
            if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
-          y_repeat(4);
+          y_repeat(5);
            if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
            if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    
@@ -246,7 +246,7 @@ void loop() {
              if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
             while(timert < 3000){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}
             spamd = 0;
-            while (spamd < 7) {
+            while (spamd < 16) {
               timert = 0;
               if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
               while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}                     
@@ -271,22 +271,22 @@ void loop() {
             al = 0;
             
              if (digitalRead(6) == HIGH){setx(0);} else{delay(100); break;}    
-            while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+            while(timert < 50){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
             y_repeat(2);
-            while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+            while(timert < 50){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
              if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
-            while(timert < 300){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+            while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
             
              if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
-            while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+            while(timert < 50){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
             y_repeat(2);
-            while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+            while(timert < 50){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
              if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
-            while(timert < 300){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+            while(timert < 800){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
 
              if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    
-            while(timert < 80){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}
+            while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}
              if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}     
             while(timert < 300){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} }
             break;
@@ -508,3 +508,5 @@ void loop() {
 }
 
  }
+
+// put your main code here, to run repeatedly:

@@ -5,6 +5,7 @@
 #include <Adafruit_SSD1306.h>
 
 #define OLED_RESET 0  // GPIO0
+
 Adafruit_SSD1306 display(OLED_RESET);
 
 int xx = 0;
@@ -139,41 +140,41 @@ void loop() {
           display.setCursor(32, 52);
           display.print("Running...");
           display.display();
-           if (digitalRead(6) == HIGH){delay(100);  if (digitalRead(6) == HIGH){delay(100); sety(0);} else{break;}    } else{break;}    
+           if (digitalRead(6) == HIGH){delay(100);  if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    } else{break;}    
           y_repeat(27);
-           if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
           
-           if (digitalRead(6) == HIGH){delay(100); setx(255);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
           y_repeat(4);
-           if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); sety(255);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
           y_repeat(23);
-           if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); setx(255);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
           y_repeat(4);
-           if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); sety(0);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    
           y_repeat(22);
-           if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); setx(255);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
           y_repeat(4);
-           if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); sety(255);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
           y_repeat(22);
-           if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); setx(255);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
           y_repeat(4);
-           if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+           if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
-           if (digitalRead(6) == HIGH){delay(100); sety(0);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    
           y_repeat(23);
-           if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+           if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
           break;
 
          case 2:
@@ -181,7 +182,7 @@ void loop() {
            display.setCursor(32, 52);
            display.print("Running...");
            display.display();    
-            if (digitalRead(6) == HIGH){delay(100); sety(255);} else{break;}    
+            if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
            while (digitalRead(6) == HIGH) {
              timert = 0;
              if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(0);} else{break;}       
@@ -190,7 +191,7 @@ void loop() {
              timert = 0;
              while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}
              }
-            if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+            if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
            break;
           case 3:
             delay(100);
@@ -210,39 +211,39 @@ void loop() {
             display.setCursor(32, 52);
             display.print("Running...");
             display.display();
-             if (digitalRead(6) == HIGH){delay(100); setx(255);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
             while(timert < 70){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}  
             if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
             while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}                     
             if (digitalRead(6) == HIGH){delay(100); Joystick.releaseButton(2);} else{break;}
-             if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
             
             while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}    
             
-             if (digitalRead(6) == HIGH){delay(100); setx(0);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(0);} else{delay(100); break;}    
             while(timert < 1350){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}  
             if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
             while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}                     
             if (digitalRead(6) == HIGH){delay(100); Joystick.releaseButton(2);} else{break;}
-             if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
             while(timert < 2000){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}    
             
-             if (digitalRead(6) == HIGH){delay(100); sety(255);} else{break;}    
+             if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
             while(timert < 3150){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}  
-             if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+             if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
 
             while(timert < 1000){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}  
             
-             if (digitalRead(6) == HIGH){delay(100); sety(0);} else{break;}    
+             if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    
             while(timert < 70){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}  
             if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
             while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}                     
             if (digitalRead(6) == HIGH){delay(100); Joystick.releaseButton(2);} else{break;}
-             if (digitalRead(6) == HIGH){delay(100); sety(255);} else{break;}    
+             if (digitalRead(6) == HIGH){sety(255);} else{delay(100); break;}    
 
             while(timert < 4500){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}  
-             if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}    
+             if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}    
             while(timert < 3000){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}
             spamd = 0;
             while (spamd < 7) {
@@ -253,6 +254,7 @@ void loop() {
               timert = 0;
               while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
               spamd++;}
+            break;
            case 5:
             delay(100);
             display.setCursor(32, 52);
@@ -268,25 +270,26 @@ void loop() {
               }
             al = 0;
             
-             if (digitalRead(6) == HIGH){delay(100); setx(0);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(0);} else{delay(100); break;}    
             while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
             y_repeat(2);
             while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
-             if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
 
             while(timert < 300){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
             
-             if (digitalRead(6) == HIGH){delay(100); setx(255);} else{break;}    
+             if (digitalRead(6) == HIGH){setx(255);} else{delay(100); break;}    
             while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
             y_repeat(2);
-            while(timert < 120){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
-             if (digitalRead(6) == HIGH){delay(100); setx(127);} else{break;}    
+            while(timert < 100){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
+             if (digitalRead(6) == HIGH){setx(127);} else{delay(100); break;}    
             while(timert < 300){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} 
 
-             if (digitalRead(6) == HIGH){delay(100); sety(0);} else{break;}    
+             if (digitalRead(6) == HIGH){sety(0);} else{delay(100); break;}    
             while(timert < 80){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}
-             if (digitalRead(6) == HIGH){delay(100); sety(127);} else{break;}     
+             if (digitalRead(6) == HIGH){sety(127);} else{delay(100); break;}     
             while(timert < 300){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}} }
+            break;
           case 6:
            delay(100);
            display.setCursor(32, 52);
@@ -505,5 +508,3 @@ void loop() {
 }
 
  }
-
-// put your main code here, to run repeatedly:

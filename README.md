@@ -41,7 +41,7 @@ Stone Break - Digging a hole trap and breaking the stone. For proper use, please
 ```
 Also you need to face to Horth while standing.
 
-Tree pick - Spamming A and picking up items on each side in loop.
+Tree pick - Spamming A and picking up items in loop.
 
 Inv sell - Selling the whole inventory. Useful when you need to sell ALL turnips in your inventory, but sometimes you miss one stack.
 

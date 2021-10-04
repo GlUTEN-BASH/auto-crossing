@@ -260,16 +260,18 @@ void loop() {
             display.setCursor(32, 52);
             display.print("Running...");
             display.display();
-
-            while (al < 30){
-              if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
-              while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}                     
-              if (digitalRead(6) == HIGH){delay(100); Joystick.releaseButton(2);} else{break;}
-              al++;
-              }
-            al = 0;
             
-            y_repeat(2);
+            while(digitalRead(6) == HIGH){
+              while (al < 30){
+                if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
+                while(timert < 200){if (digitalRead(6) == HIGH){delay(1); timert++;} else{delay(100); break;}}                     
+                if (digitalRead(6) == HIGH){delay(100); Joystick.releaseButton(2);} else{break;}
+                al++;
+                }
+              al = 0;
+              
+              y_repeat(2);
+            }
             
             break;
           case 6:
@@ -491,3 +493,5 @@ void loop() {
 }
 
  }
+
+// put your main code here, to run repeatedly:

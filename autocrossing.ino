@@ -260,7 +260,6 @@ void loop() {
             display.setCursor(32, 52);
             display.print("Running...");
             display.display();
-            while (digitalRead(6) == HIGH){
 
             while (al < 30){
               if (digitalRead(6) == HIGH){delay(100); Joystick.pressButton(2);} else{break;}       
@@ -270,8 +269,8 @@ void loop() {
               }
             al = 0;
             
-            y_repeat(4);
-
+            y_repeat(2);
+            
             break;
           case 6:
            delay(100);
@@ -392,6 +391,7 @@ void loop() {
 
     }
   
+  
   }
 
   
@@ -491,5 +491,3 @@ void loop() {
 }
 
  }
-
-// put your main code here, to run repeatedly:
